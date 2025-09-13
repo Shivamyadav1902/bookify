@@ -1,0 +1,131 @@
+
+import { Service, ServiceCategory, Review } from '../types';
+
+export const mockServices: Service[] = [
+  {
+    id: 'hotel-01',
+    name: 'Seaside Grand Hotel',
+    category: ServiceCategory.Hotel,
+    location: 'Miami, FL',
+    price: 250,
+    priceUnit: 'night',
+    rating: 4.8,
+    reviewCount: 1245,
+    imageUrl: 'https://picsum.photos/seed/hotel1/800/600',
+    description: 'A luxurious hotel offering breathtaking ocean views, a world-class spa, and gourmet dining options. Perfect for a relaxing getaway.',
+    gallery: [
+      'https://picsum.photos/seed/hotel1-a/1200/800',
+      'https://picsum.photos/seed/hotel1-b/1200/800',
+      'https://picsum.photos/seed/hotel1-c/1200/800',
+    ],
+    reviews: [
+      { id: 'r1', author: 'Alice Johnson', avatarUrl: 'https://i.pravatar.cc/150?u=a', rating: 5, comment: 'Absolutely stunning! The service was impeccable.', date: '2023-10-15' },
+      { id: 'r2', author: 'Bob Williams', avatarUrl: 'https://i.pravatar.cc/150?u=b', rating: 4, comment: 'Great location, but the room was a bit smaller than expected.', date: '2023-09-22' },
+    ],
+    amenities: ['Free WiFi', 'Swimming Pool', 'Spa', 'Gym', 'Pet Friendly'],
+  },
+  {
+    id: 'restaurant-01',
+    name: 'The Golden Spoon',
+    category: ServiceCategory.Restaurant,
+    location: 'New York, NY',
+    price: 80,
+    priceUnit: 'person',
+    rating: 4.9,
+    reviewCount: 2310,
+    imageUrl: 'https://picsum.photos/seed/resto1/800/600',
+    description: 'An exclusive fine dining experience featuring a modern twist on classic French cuisine. Award-winning wine list.',
+    gallery: [
+      'https://picsum.photos/seed/resto1-a/1200/800',
+      'https://picsum.photos/seed/resto1-b/1200/800',
+    ],
+    reviews: [
+      { id: 'r3', author: 'Charlie Brown', avatarUrl: 'https://i.pravatar.cc/150?u=c', rating: 5, comment: 'A culinary masterpiece. Every dish was a work of art.', date: '2023-11-01' },
+    ],
+    amenities: [' Michelin Star', 'Valet Parking', 'Private Dining', 'Outdoor Seating'],
+  },
+  {
+    id: 'salon-01',
+    name: 'Chic & Sleek Salon',
+    category: ServiceCategory.Salon,
+    location: 'Los Angeles, CA',
+    price: 60,
+    priceUnit: 'hour',
+    rating: 4.7,
+    reviewCount: 580,
+    imageUrl: 'https://picsum.photos/seed/salon1/800/600',
+    description: 'A premier salon specializing in modern hair styling, coloring, and luxury spa treatments. Our stylists are industry experts.',
+    gallery: [
+        'https://picsum.photos/seed/salon1-a/1200/800',
+        'https://picsum.photos/seed/salon1-b/1200/800',
+    ],
+    reviews: [
+        { id: 'r4', author: 'Diana Miller', avatarUrl: 'https://i.pravatar.cc/150?u=d', rating: 5, comment: 'Best haircut I\'ve ever had! The atmosphere is so relaxing.', date: '2023-10-28' },
+    ],
+    amenities: ['Expert Stylists', 'Organic Products', 'Massage Services', 'Manicure & Pedicure'],
+  },
+  {
+    id: 'doctor-01',
+    name: 'City Health Clinic',
+    category: ServiceCategory.Doctor,
+    location: 'Chicago, IL',
+    price: 150,
+    priceUnit: 'hour',
+    rating: 4.9,
+    reviewCount: 950,
+    imageUrl: 'https://picsum.photos/seed/doctor1/800/600',
+    description: 'A state-of-the-art medical clinic with board-certified physicians specializing in general and preventative care.',
+     gallery: [
+        'https://picsum.photos/seed/doctor1-a/1200/800',
+        'https://picsum.photos/seed/doctor1-b/1200/800',
+    ],
+    reviews: [
+        { id: 'r5', author: 'Eve Davis', avatarUrl: 'https://i.pravatar.cc/150?u=e', rating: 5, comment: 'Dr. Smith was very attentive and thorough. Highly recommend.', date: '2023-09-05' },
+    ],
+    amenities: ['Board-Certified', 'On-site Lab', 'Telehealth Available', 'Walk-ins Welcome'],
+  },
+   {
+    id: 'hotel-02',
+    name: 'Mountain Retreat Lodge',
+    category: ServiceCategory.Hotel,
+    location: 'Aspen, CO',
+    price: 350,
+    priceUnit: 'night',
+    rating: 4.9,
+    reviewCount: 980,
+    imageUrl: 'https://picsum.photos/seed/hotel2/800/600',
+    description: 'A cozy, rustic lodge nestled in the mountains. Perfect for ski trips and nature lovers, with ski-in/ski-out access and a roaring fireplace in the lobby.',
+    gallery: [
+      'https://picsum.photos/seed/hotel2-a/1200/800',
+      'https://picsum.photos/seed/hotel2-b/1200/800',
+      'https://picsum.photos/seed/hotel2-c/1200/800',
+    ],
+    reviews: [
+      { id: 'r6', author: 'Frank Green', avatarUrl: 'https://i.pravatar.cc/150?u=f', rating: 5, comment: 'Incredible experience! The views are unbeatable and the staff is so friendly.', date: '2023-12-10' },
+      { id: 'r7', author: 'Grace Hall', avatarUrl: 'https://i.pravatar.cc/150?u=g', rating: 4, comment: 'Lovely hotel, but the Wi-Fi was a bit slow in our room.', date: '2023-11-20' },
+    ],
+    amenities: ['Ski-in/Ski-out', 'Hot Tub', 'Fireplace', 'Free WiFi', 'Restaurant'],
+  },
+  {
+    id: 'restaurant-02',
+    name: 'Urban Pasta Bar',
+    category: ServiceCategory.Restaurant,
+    location: 'San Francisco, CA',
+    price: 45,
+    priceUnit: 'person',
+    rating: 4.6,
+    reviewCount: 1500,
+    imageUrl: 'https://picsum.photos/seed/resto2/800/600',
+    description: 'A vibrant and casual eatery serving fresh, handmade pasta with both traditional and innovative sauces. Great for a quick, delicious meal.',
+    gallery: [
+      'https://picsum.photos/seed/resto2-a/1200/800',
+      'https://picsum.photos/seed/resto2-b/1200/800',
+    ],
+    reviews: [
+      { id: 'r8', author: 'Henry King', avatarUrl: 'https://i.pravatar.cc/150?u=h', rating: 5, comment: 'The carbonara was to die for! I\'ll be dreaming about it.', date: '2023-11-05' },
+    ],
+    amenities: ['Handmade Pasta', 'Vegan Options', 'Craft Beer', 'Happy Hour'],
+  },
+];
+
+export const serviceCategories = Object.values(ServiceCategory);
